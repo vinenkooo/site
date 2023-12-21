@@ -23,7 +23,3 @@ function add_post(post) {
 fetch('https://jsonplaceholder.typicode.com/posts')
     .then((response) => response.json())
     .then((json) => json.forEach((post) => add_post(post)));
-
-document.querySelector('.arrow-up').addEventListener('click', function() {
-        window.scrollTo({ top: 0, behavior: 'smooth' });
-});
